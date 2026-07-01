@@ -1,0 +1,22 @@
+[package]
+name = "gitcrack"
+version = "0.1.0"
+description = "A personal visual Git client"
+authors = ["GitCrack"]
+edition = "2021"
+
+[lib]
+name = "gitcrack_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.2.0", features = [] }
+
+[dependencies]
+git2 = { version = "0.20", features = ["https", "ssh"] }
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.5.0", features = [] }
+tauri-plugin-dialog = "2"
+thiserror = "2"

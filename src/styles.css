@@ -1,0 +1,625 @@
+:root {
+  color: #e7ecf3;
+  background: #101318;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #394453;
+  border-radius: 6px;
+  background: #202832;
+  color: #e7ecf3;
+  cursor: pointer;
+  min-height: 34px;
+}
+
+button:hover {
+  background: #2b3542;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.runtime-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 8px 14px;
+  border-bottom: 1px solid #6f4e18;
+  background: #251d11;
+  color: #ffd28a;
+  font-size: 13px;
+}
+
+.runtime-banner code {
+  color: #ffffff;
+}
+
+.topbar {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #26303b;
+  background: #151a21;
+}
+
+.topbar div {
+  display: grid;
+  gap: 2px;
+}
+
+.topbar span,
+.meta,
+.notice,
+.panel p {
+  color: #9aa8b8;
+}
+
+.topbar form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  max-width: 780px;
+}
+
+.topbar input {
+  flex: 1;
+  min-width: 120px;
+  border: 1px solid #394453;
+  border-radius: 6px;
+  background: #0f1318;
+  color: #e7ecf3;
+  padding: 0 10px;
+}
+
+.gitlab-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #26303b;
+}
+
+.gitlab-panel label {
+  display: grid;
+  gap: 4px;
+}
+
+.gitlab-panel label span,
+.gitlab-project span,
+.inline-warning,
+.inline-hint {
+  color: #9aa8b8;
+  font-size: 12px;
+}
+
+.inline-warning {
+  margin: 0;
+  color: #ffd28a;
+}
+
+.inline-hint {
+  margin: 0;
+}
+
+.gitlab-panel input,
+.gitlab-panel select {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #394453;
+  border-radius: 6px;
+  background: #0f1318;
+  color: #e7ecf3;
+  min-height: 34px;
+  padding: 0 10px;
+}
+
+.gitlab-projects {
+  display: grid;
+  gap: 8px;
+}
+
+.gitlab-project {
+  display: grid;
+  gap: 6px;
+  border: 1px solid #26303b;
+  border-radius: 8px;
+  padding: 8px;
+  background: #151a21;
+}
+
+.gitlab-project strong,
+.gitlab-project span {
+  overflow-wrap: anywhere;
+}
+
+.gitlab-project a {
+  color: #9cc2ff;
+  font-size: 13px;
+  align-self: center;
+}
+
+.workspace {
+  min-height: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 280px minmax(420px, 1fr) 430px;
+}
+
+.sidebar,
+.details {
+  min-width: 0;
+  overflow: auto;
+  border-right: 1px solid #26303b;
+  background: #12171d;
+  padding: 14px;
+}
+
+.details {
+  border-right: 0;
+  border-left: 1px solid #26303b;
+}
+
+h2 {
+  margin: 14px 0 10px;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.segmented button {
+  min-width: 0;
+  font-size: 12px;
+}
+
+.segmented .active {
+  background: #1f6feb;
+  border-color: #3c83f6;
+}
+
+.branch-list {
+  display: grid;
+  gap: 8px;
+}
+
+.branch-drop {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.branch-drop.over {
+  border-color: #37c6a3;
+  background: rgba(55, 198, 163, 0.12);
+}
+
+.branch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  padding: 0 10px;
+}
+
+.branch-item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.branch-item.current {
+  border-color: #37c6a3;
+}
+
+.branch-item small,
+.tag {
+  color: #37c6a3;
+}
+
+.checkout,
+.compare-button {
+  font-size: 12px;
+  min-height: 30px;
+}
+
+.graph-pane {
+  overflow: auto;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0, 208, 255, 0.08), transparent 32%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    #0b1016;
+  background-size: auto, 48px 48px, auto;
+}
+
+.empty {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #9aa8b8;
+}
+
+.commit-table {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.commit-table-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: grid;
+  height: 28px;
+  border-bottom: 1px solid #26303b;
+  background: #151a21;
+  color: #8391a4;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.commit-table-header span {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  border-right: 1px solid #26303b;
+  padding: 0 10px;
+}
+
+.commit-graph {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  overflow: visible;
+}
+
+.branch-column-bg {
+  fill: rgba(18, 23, 29, 0.94);
+}
+
+.graph-column-bg {
+  fill: rgba(11, 16, 22, 0.74);
+}
+
+.column-divider {
+  stroke: #26303b;
+  stroke-width: 1;
+}
+
+.edge {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  opacity: 0.9;
+}
+
+.commit-glyph circle {
+  fill: #0b1016;
+  stroke-width: 4;
+  cursor: pointer;
+}
+
+.commit-glyph .commit-dot {
+  stroke: #0b1016;
+  stroke-width: 2;
+}
+
+.commit-glyph circle.selected {
+  fill: #10243a;
+  stroke-width: 5;
+}
+
+.commit-glyph circle.base {
+  fill: #3a2910;
+  stroke: #ffd28a !important;
+}
+
+.commit-glyph.is-selected circle.selected {
+  filter: drop-shadow(0 0 6px rgba(0, 208, 255, 0.55));
+}
+
+.branch-tags,
+.branch-column-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  height: 100%;
+}
+
+.branch-column-tags {
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.branch-chip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 180px;
+  min-height: 22px;
+  border: 1px solid #37c6a3;
+  border-radius: 999px;
+  background: rgba(15, 19, 24, 0.88);
+  color: #e7ecf3;
+  padding: 2px 8px;
+  font-size: 11px;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.branch-chip.head {
+  background: rgba(255, 176, 46, 0.2);
+  color: #ffd28a;
+}
+
+.branch-chip.remote {
+  border-style: dashed;
+  color: #9cc2ff;
+}
+
+.branch-chip.muted {
+  border-color: #64748b;
+  color: #94a3b8;
+}
+
+.commit-message-column {
+  position: absolute;
+  top: 28px;
+  border-left: 1px solid #26303b;
+  background: rgba(15, 19, 24, 0.72);
+}
+
+.commit-message-row {
+  position: absolute;
+  left: 0;
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 180px 86px;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(38, 48, 59, 0.35);
+  background: transparent;
+  color: #d8dee8;
+  padding: 0 12px;
+  text-align: left;
+}
+
+.commit-message-row:hover,
+.commit-message-row.selected {
+  background: rgba(31, 111, 235, 0.18);
+}
+
+.commit-message-row.base {
+  box-shadow: inset 3px 0 0 #ffd28a;
+}
+
+.commit-summary,
+.commit-meta-inline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.commit-summary {
+  font-size: 14px;
+}
+
+.commit-meta-inline {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.compare-inline {
+  justify-self: end;
+  border: 1px solid #394453;
+  border-radius: 6px;
+  color: #9cc2ff;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.panel,
+.diff-panel {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #26303b;
+}
+
+.notice {
+  min-height: 22px;
+  margin: 0 0 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.panel-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commit-inspector strong {
+  line-height: 1.35;
+}
+
+.commit-meta-grid {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 6px 10px;
+  align-items: baseline;
+}
+
+.commit-meta-grid span,
+.commit-file small,
+.commit-file-list small {
+  color: #9aa8b8;
+  font-size: 12px;
+}
+
+.commit-meta-grid p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.commit-meta-grid code {
+  color: #d7e4f5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inspector-tags {
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.commit-file-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.commit-file {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.commit-file span:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.commit-file.active {
+  border-color: #00d0ff;
+  background: rgba(0, 208, 255, 0.1);
+}
+
+.status-dot {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: #334155;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-dot.added {
+  background: #157347;
+}
+
+.status-dot.deleted {
+  background: #a33131;
+}
+
+.status-dot.renamed,
+.status-dot.copied {
+  background: #9a6700;
+}
+
+.status-dot.modified {
+  background: #1f6feb;
+}
+
+.change-list {
+  display: grid;
+  gap: 6px;
+}
+
+.change-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.change-item span,
+.change-item small {
+  overflow-wrap: anywhere;
+}
+
+.change-item small {
+  color: #9aa8b8;
+  text-transform: capitalize;
+}
+
+.change-item.active {
+  border-color: #37c6a3;
+  background: #17211f;
+}
+
+.drag-card {
+  border: 1px solid #37c6a3;
+  border-radius: 6px;
+  background: #17211f;
+  color: #e7ecf3;
+  padding: 8px 10px;
+}
+
+@media (max-width: 1100px) {
+  .workspace {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .details {
+    grid-column: 1 / -1;
+    max-height: 46vh;
+  }
+}
