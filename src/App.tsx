@@ -32,7 +32,7 @@ type DragPayload =
   | { type: "branch"; branch: Branch }
   | { type: "commit"; commit: CommitNode };
 
-const defaultPath = "/home/sala10-mesa1/Documentos/Projetos/GitCrack";
+const defaultPath = "/home/sala10-mesa1/Documentos/Projetos/GitVT";
 
 export function App() {
   const [repoPath, setRepoPath] = useState(defaultPath);
@@ -179,7 +179,7 @@ export function App() {
         )}
         <header className="topbar">
           <div>
-            <strong>GitCrack</strong>
+            <strong>GitVT</strong>
             <span>{state?.head ? `HEAD: ${state.head}` : "No repository loaded"}</span>
           </div>
           <form

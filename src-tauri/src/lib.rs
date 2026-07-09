@@ -276,7 +276,7 @@ fn github_list_projects(
     let repos: Vec<GitHubRepoDto> = client
         .get(url)
         .header("Accept", "application/vnd.github+json")
-        .header("User-Agent", "GitCrack")
+        .header("User-Agent", "GitVT")
         .header("X-GitHub-Api-Version", "2022-11-28")
         .bearer_auth(token)
         .query(&[
@@ -946,5 +946,5 @@ pub fn run() {
             abort_operation
         ])
         .run(tauri::generate_context!())
-        .expect("error while running GitCrack");
+        .expect("error while running GitVT");
 }

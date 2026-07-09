@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "GitCrack",
+  "productName": "GitVT",
   "version": "0.1.0",
-  "identifier": "dev.local.gitcrack",
+  "identifier": "dev.local.gitvt",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://127.0.0.1:1420",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "GitCrack",
+        "title": "GitVT",
         "width": 1440,
         "height": 920,
         "minWidth": 980,

@@ -1,4 +1,4 @@
-# GitCrack
+# GitVT
 
 Cliente Git desktop pessoal inspirado no fluxo visual do GitKraken.
 

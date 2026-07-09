@@ -1,12 +1,12 @@
 [package]
-name = "gitcrack"
+name = "gitvt"
 version = "0.1.0"
 description = "A personal visual Git client"
-authors = ["GitCrack"]
+authors = ["GitVT"]
 edition = "2021"
 
 [lib]
-name = "gitcrack_lib"
+name = "gitvt_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]

@@ -32,7 +32,7 @@ function node(id: string, summary: string, parents: string[], lane: number, row:
     shortId: id,
     summary,
     message: `${summary}\n\nDemo commit`,
-    author: "GitCrack",
+    author: "GitVT",
     email: "local@example.com",
     time: Date.now() / 1000 - row * 3600,
     parents,

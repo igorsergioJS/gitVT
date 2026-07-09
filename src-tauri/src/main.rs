@@ -1,3 +1,3 @@
 fn main() {
-    gitcrack_lib::run();
+    gitvt_lib::run();
 }
