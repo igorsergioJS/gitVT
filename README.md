@@ -13,6 +13,12 @@ Repositório da **Tarefa 05** da disciplina **PPGEEC2327 - Tópicos Especiais em
 
 **Arquivo da apresentação:** [apresentacao.pdf](apresentacao.pdf)
 
+## Materiais relacionados
+
+- **Repositório complementar:** <https://github.com/vitoryeso/lifecycle-loop-demo>
+
+Esse repositório complementar reúne um demo relacionado ao tema `lifecycle-loop`, servindo como material adicional de apoio ao trabalho. Ele pode ser consultado como referência externa para a apresentação e para o contexto mais amplo das discussões associadas à tarefa.
+
 ## Visão geral
 
 O projeto apresenta um cliente Git visual chamado **GitVT**, desenvolvido como artefato prático da Tarefa 05. A aplicação combina uma interface em **React + TypeScript** com um shell desktop em **Tauri 2** e um backend local em **Rust**, permitindo explorar repositórios, visualizar o histórico em grafo e executar operações Git diretamente pela interface.
