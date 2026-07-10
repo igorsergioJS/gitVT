@@ -9,7 +9,7 @@ Repositório da **Tarefa 05** da disciplina **PPGEEC2327 - Tópicos Especiais em
 - **Discentes:** Vitor Yeso Fidelis Freitas
 - **Docente:** Prof. Dr. Ivanovitch Medeiros Dantas da Silva
 
-**Link do vídeo da apresentação:** [Vídeo no Drive](https://drive.google.com/file/d/1HcRgs-uQWO43jj1AOTVe2x_pRbPYBMBy/view?usp=sharing)
+**Link do vídeo da apresentação:** [Vídeo no YouTube](https://youtu.be/pR8n_ZCJuyE)
 
 **Arquivo da apresentação:** [apresentacao.pdf](apresentacao.pdf)
 
