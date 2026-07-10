@@ -4,9 +4,9 @@ Repositório da **Tarefa 05** da disciplina **PPGEEC2327 - Tópicos Especiais em
 
 ## Integrantes
 
-- **Discentes:** Igor Sérgio de França Correia
-- **Discentes:** Reilta Christine Dantas Maia
-- **Discentes:** Vitor Yeso Fidelis Freitas
+- **Discente 01:** Igor Sérgio de França Correia
+- **Discente 02:** Reilta Christine Dantas Maia
+- **Discente 03:** Vitor Yeso Fidelis Freitas
 - **Docente:** Prof. Dr. Ivanovitch Medeiros Dantas da Silva
 
 **Link do vídeo da apresentação:** [Vídeo no YouTube](https://youtu.be/pR8n_ZCJuyE)
